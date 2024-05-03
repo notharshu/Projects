@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('bg2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    overflow: hidden; 
+    backdrop-filter: blur(2px);
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.navbar-custom {
+    background-color: #002346; 
+}
+
+.navbar-brand {
+    color: rgb(235, 235, 235);
+}
+
+.me-2 {
+    width: 45% !important;
+    border-radius: 8px;
+}
+
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.addNoteContainer {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.fade-in {
+    opacity: 1; 
+}
+
+.fade-out {
+    opacity: 0; 
+}
+
+.input_title {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    margin-bottom: 6px;
+}
+
+.input_descp {
+    border: none;
+}
+
+.button_save {
+    background-color: #0076a4; 
+    color: whitesmoke; 
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.button_save:hover {
+    background-color: #50cdff;
+    color: #151515;
+}
+
+.button_cancel {
+    background-color: #ff4d4d; 
+    color: whitesmoke; 
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.button_cancel:hover {
+    background-color: #ff8080;
+    color: #151515;
+}
+
+.card {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card_btns {
+    background-color: #0076a4; 
+    color: whitesmoke;
+    border-radius: 50%;
+    padding: 7px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.card_btns:hover {
+    background-color: #50cdff;
+    color: #151515;
+}
+
+.circular-btn {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #0076a4;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
