@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(to bottom right, #0073ad, #5c0979, #904f00);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.todo-container {
+  margin: 35px auto;
+  max-width: 500px;
+  padding: 20px;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(39, 39, 39, 0.5));
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.todo-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.task-item input {
+  margin-right: 10px;
+  color: black;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.edit-btn,
+.save-btn,
+.delete-btn,
+.btn-primary {
+  background: linear-gradient(to right, #001704, #110036);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.edit-btn:hover,
+.save-btn:hover,
+.delete-btn:hover,
+.btn-primary:hover {
+  background: linear-gradient(to bottom right, #990094, #0083db);
+}
+
+@media only screen and (max-width: 768px) {
+  .todo-container {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .todo-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
